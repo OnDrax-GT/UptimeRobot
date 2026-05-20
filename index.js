@@ -14,8 +14,6 @@ app.listen(port, () => {
 // --- KODE MINEFLAYER ANDA DI BAWAH INI ---
 const mineflayer = require('mineflayer');
 
-const mineflayer = require('mineflayer');
-
 // --- BOT 1: PENJAGA LOBBY ---
 function createLobbyBot() {
     const botLobby = mineflayer.createBot({
