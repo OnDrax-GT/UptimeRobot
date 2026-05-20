@@ -22,7 +22,11 @@ function createBot() {
         auth: 'offline'               
     });
 
-    bot.on('spawn', () => { console.log('Bot masuk ke Minecraft!'); });
+    bot.on('spawn', () => { 
+    console.log('Bot masuk ke Minecraft!'); 
+    // Menyuruh bot mengetik command otomatis
+    bot.chat('/gamemode creative'); 
+});
     bot.on('end', () => { setTimeout(createBot, 10000); });
     bot.on('error', (err) => console.log('Error:', err));
 }
